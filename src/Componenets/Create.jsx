@@ -1,11 +1,14 @@
 import { nanoid } from "nanoid";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from 'react-toastify';
+import { TodoContext } from "./Todocontext";
 
-const Create = (props) => {
-  const { todos, settodos } = props;
+const Create = () => {
+  // const { todos, settodos } = props;
   // const [title, settitle] = useState("");
+  const [todos,settodos] = useContext(TodoContext)
+  
 
   const {
     register,
@@ -25,7 +28,7 @@ const Create = (props) => {
 
       reset();
   };
-  console.log(todos);
+  // console.log(todos);
   
 
   // const submithandler = (e) => {
