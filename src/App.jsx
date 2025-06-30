@@ -11,11 +11,17 @@ const App = () => {
   // }])
   
   return (
-    <div className='flex flex-col bg-blue-950 text-white w-full  h-full  justify-center items-center '>
-      <Create  />
-      <br />
-      <Read  />
-    </div>
+    // <div className='flex sm:flex-row flex-col bg-blue-950 text-white w-full  h-full  justify-center items-center '>
+    //   <Create  />
+    //   {/* <br /> */}
+    //   <Read  />
+    // </div>
+    <div className='flex sm:flex-row flex-col bg-slate-900 text-white w-full h-full justify-center items-center'>
+  <Create />
+  <Read />
+</div>
+
+
   )
 }
 
